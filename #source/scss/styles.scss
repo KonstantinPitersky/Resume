@@ -1,0 +1,231 @@
+@import "nullstyle.scss";
+@import "animations.scss";
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+	font-style: italic;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.text {
+	font-size: 20px;
+	text-align: justify;
+	& p {
+		line-height: 30px;
+	}
+}
+
+.title {
+	font-weight: 700;
+	font-size: 22px;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.mark {
+	font-weight: 700;
+	font-size: 22px;
+	color: white;
+	background-color: #0066CC;
+}
+
+.main-block {
+	margin-bottom: 100px;
+	&__title {
+		margin-bottom: 30px;
+		& span {
+			margin-right: 10px;
+			padding: 10px 5px 5px 5px;
+		}
+	}
+	&__main-block__mark {
+		margin-right: 10px;
+		padding: 10px 5px 5px 5px;
+	}
+	&__text {
+	}
+	&__a {
+		margin-left: 40px;
+	}
+	&__img {
+		width: 130px;
+		height: 130px;
+	}
+	&__ul {
+	}
+	&__li {
+		margin-left: 40px;
+		margin-bottom: 10px;
+		padding-left: 25px;
+		background: url(../img/li.png) 0 3px/20px no-repeat;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	& p {
+		margin-bottom: 30px;
+	}
+}
+
+.main {
+	overflow: hidden;
+	&__bg {
+		position: fixed;
+		background: url(../img/bg.jpg) 43% 57%/cover no-repeat;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+	}
+	&__row {
+		position: fixed;
+		left: 50%;
+		transform: translateX(-50%);
+		max-width: 1300px;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		align-items: stretch;
+		top: 100%;
+	}
+	&__page {
+		width: 75%;
+		display: flex;
+		flex-direction: column;
+		background-color: white;
+		padding: 0px 50px 30px 100px;
+	}
+	&__hi {
+		padding: 100px 10px 10px 10px;
+		align-self: flex-start;
+		font-size: 30px;
+		margin-bottom: 30px;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	&__introduction {
+		font-size: 35px;
+		margin-bottom: 80px;
+		& span {
+			text-decoration: line-through;
+		}
+		&:after {
+			position: relative;
+			left: -90px;
+			top: 24px;
+			content: "моя история";
+			white-space: nowrap;
+			background-color: #0066CC;
+			color: white;
+			padding: 5px;
+		}
+	}
+	&__education {
+		& p {
+			margin-left: 40px;
+			margin-bottom: 0;
+		}
+	}
+	&__work {
+		& p {
+			margin-bottom: 0;
+		}
+	}
+	&__skills {
+
+	}
+	&__projects {
+		& p {
+			margin-bottom: 0;
+		}
+	}
+	&__additional-info {
+
+	}
+	&__about {
+
+	}
+	&__label {
+		width: 25%;
+		background-color:transparent;
+		padding: 30px;
+		display: flex;
+	}
+}
+
+
+.label {
+	&__row {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__photo {
+		transform: scale(0);
+		position: fixed;
+		z-index: 2;
+		background: url(../img/photo.jpg) 50%/cover no-repeat;
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
+		border: 10px solid #33CCFF;
+	}
+	&__contacts {
+		position: fixed;
+		z-index: 2;
+		top: 300px;
+		align-self: flex-start;
+	}
+}
+
+.contacts {
+	&__row {
+		display: flex;
+		flex-direction: column;
+		margin-right: 5px;
+	}
+	&__title {
+		opacity: 0;
+		margin-bottom: 30px;
+		font-size: 25px;
+		border-bottom: 3px solid #33CCFF;
+	}
+	&__ul {
+		position: relative;
+		top: 100px;
+		opacity: 0;
+	}
+	&__li {
+		margin: 0 0 30px 20px;
+	}
+	&__icon {
+		position: relative;
+		top: -9px;
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
+	}
+}
+
+.label-text {
+	color: white;
+}
+
+.resume-reading {
+	position: static;
+	transform: none;
+	left: 0;
+	top: 0;
+	margin: 0 auto;
+}
+
