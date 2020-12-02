@@ -18,7 +18,7 @@ class Main {
 				}, 1000)
 		}).then(() => {
 			setTimeout(() => {
-				document.querySelector('.contacts__ul').classList.add('show-contacts');
+				document.querySelector('.contacts__ul').classList.add('show-contacts', 'item-up');
 			}, 2000)
 			
 		}).then(() => {
