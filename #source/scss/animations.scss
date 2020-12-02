@@ -3,7 +3,7 @@
 }
 
 .show-item {
-	animation: show-item 1s forwards;
+	animation: appear 1s forwards;
 }
 
 .scale-item {
@@ -15,7 +15,7 @@
 }
 
 .show-contacts {
-	animation: show-item 1s forwards, item-up 1s forwards;
+	animation: appear 1s forwards, item-up 1s forwards;
 }
 
 @keyframes scroll-up {
@@ -27,7 +27,7 @@
 	}
 }
 
-@keyframes show-item {
+@keyframes appear {
 	0% {
 		opacity: 0;
 	}

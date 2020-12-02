@@ -338,11 +338,11 @@ a {
   cursor: pointer;
   display: block;
   position: fixed;
-  z-index: 4;
+  z-index: 5;
   width: 40px;
   height: 30px;
-  right: 2%;
-  top: 2%;
+  left: 20px;
+  bottom: 20px;
 }
 .burger__body span {
   background-color: #0066CC;
@@ -352,9 +352,9 @@ a {
   height: 5px;
   top: 12.5px;
   border-radius: 2px;
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 .burger__body:before, .burger__body:after {
   content: "";
@@ -401,8 +401,8 @@ a {
 }
 
 .show-item {
-  -webkit-animation: show-item 1s forwards;
-          animation: show-item 1s forwards;
+  -webkit-animation: appear 1s forwards;
+          animation: appear 1s forwards;
 }
 
 .scale-item {
@@ -416,8 +416,8 @@ a {
 }
 
 .show-contacts {
-  -webkit-animation: show-item 1s forwards, item-up 1s forwards;
-          animation: show-item 1s forwards, item-up 1s forwards;
+  -webkit-animation: appear 1s forwards, item-up 1s forwards;
+          animation: appear 1s forwards, item-up 1s forwards;
 }
 
 @-webkit-keyframes scroll-up {
@@ -437,7 +437,7 @@ a {
     top: 0%;
   }
 }
-@-webkit-keyframes show-item {
+@-webkit-keyframes appear {
   0% {
     opacity: 0;
   }
@@ -445,7 +445,7 @@ a {
     opacity: 100%;
   }
 }
-@keyframes show-item {
+@keyframes appear {
   0% {
     opacity: 0;
   }

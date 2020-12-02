@@ -246,11 +246,11 @@ a {
 		cursor: pointer;
 		display: block;
 		position: fixed;
-		z-index: 4;
+		z-index: 5;
 		width: 40px;
 		height: 30px;
-		right: 2%;
-		top: 2%;
+		left: 20px;
+		bottom: 20px;
 		& span {
 			background-color: #0066CC;
 			position: absolute;
@@ -259,7 +259,7 @@ a {
 			height: 5px;
 			top: 12.5px;
 			border-radius: 2px;
-			transition: all 0.5s ease 0s;
+			transition: all 0.8s ease 0s;
 		}
 		&:before,
 		&:after {
