@@ -1,4 +1,15 @@
-
+@media all and (max-width: 1438px) {
+	.label {
+	}
+	.contacts {
+		&__li {
+			margin-bottom: 10px;
+		}
+		&__title {
+			margin-bottom: 0;
+		}
+	}
+}
 
 @media all and (max-width: 1150px) and (min-width: 960px) {
 	.main {
