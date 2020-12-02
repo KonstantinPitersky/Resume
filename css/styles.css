@@ -352,9 +352,9 @@ a {
   height: 5px;
   top: 12.5px;
   border-radius: 2px;
-  -webkit-transition: all 0.5 ease 0s;
-  -o-transition: all 0.5 ease 0s;
-  transition: all 0.5 ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .burger__body:before, .burger__body:after {
   content: "";
@@ -505,7 +505,7 @@ a {
     top: 30px;
   }
 }
-@media all and (min-width: 0) {
+@media all {
   .burger {
     display: none;
   }
