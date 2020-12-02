@@ -219,7 +219,7 @@ a {
 		border-bottom: 3px solid #33CCFF;
 		transition: opacity 1s ease 0s;
 		&.show-title {
-			opacity: 100%;
+			opacity: 1;
 		}
 	}
 	&__ul {
@@ -228,7 +228,7 @@ a {
 		opacity: 0;
 		transition: opacity 1s ease 0s;
 		&.show-contacts {
-			opacity: 100%;
+			opacity: 1;
 		}
 	}
 	&__li {
@@ -297,7 +297,7 @@ a {
 			bottom: 0;
 		}
 		&.show-burger {
-			opacity: 100%;
+			opacity: 1;
 		}
 		&.active-burger {
 			& span {

@@ -314,7 +314,7 @@ a {
   transition: opacity 1s ease 0s;
 }
 .contacts__title.show-title {
-  opacity: 100%;
+  opacity: 1;
 }
 .contacts__ul {
   position: relative;
@@ -325,7 +325,7 @@ a {
   transition: opacity 1s ease 0s;
 }
 .contacts__ul.show-contacts {
-  opacity: 100%;
+  opacity: 1;
 }
 .contacts__li {
   margin: 0 0 30px 0;
@@ -399,7 +399,7 @@ a {
   bottom: 0;
 }
 .burger__body.show-burger {
-  opacity: 100%;
+  opacity: 1;
 }
 .burger__body.active-burger span {
   background-color: white;
