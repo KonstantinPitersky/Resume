@@ -508,6 +508,11 @@ a {
     top: 30px;
   }
 }
+@media all and (min-width: 0) {
+  .burger {
+    display: none;
+  }
+}
 @media all and (max-width: 1438px) {
   .contacts__li {
     margin-bottom: 10px;
