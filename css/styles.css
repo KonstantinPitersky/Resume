@@ -343,6 +343,7 @@ a {
 }
 
 .burger__body {
+  opacity: 0;
   cursor: pointer;
   display: block;
   position: fixed;

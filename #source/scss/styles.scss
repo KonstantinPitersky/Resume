@@ -251,6 +251,7 @@ a {
 
 .burger {
 	&__body {
+		opacity: 0;
 		cursor: pointer;
 		display: block;
 		position: fixed;
