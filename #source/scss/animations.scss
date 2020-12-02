@@ -2,10 +2,6 @@
 	animation: scroll-up 1s forwards;
 }
 
-.show-item {
-	animation: show-item 1s forwards;
-}
-
 .scale-item {
 	animation: scale-item 1s forwards;
 }
@@ -14,8 +10,8 @@
 	animation: show-bg 1s forwards;
 }
 
-.show-contacts {
-	animation: show-item 1s forwards, item-up 1s forwards;
+.item-up {
+	animation: item-up 1s forwards;
 }
 
 @keyframes scroll-up {
@@ -24,15 +20,6 @@
 	}
 	100% {
 		top: 0%;
-	}
-}
-
-@keyframes show-item {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 100%;
 	}
 }
 

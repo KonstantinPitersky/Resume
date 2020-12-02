@@ -1,3 +1,9 @@
+@media all {
+	.burger {
+		display: none;
+	}
+}
+
 @media all and (max-width: 1438px) {
 	.label {
 	}
@@ -101,6 +107,9 @@
 	p.points {
 		margin-left: 0;
 	}
+	.title {
+		line-height: 35px;
+	}
 }
 
 @media all and (max-width: 478px) {
@@ -145,6 +154,14 @@
 			& span {
 				margin-right: 5px;
 				padding: 8px 3px 3px 3px;
+			}
+		}
+		&__li {
+			padding-left: 25px;
+			&:before {
+				width: 20px;
+				height: 20px;
+				top: -4px;
 			}
 		}
 	}

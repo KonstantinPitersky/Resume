@@ -69,9 +69,18 @@ a {
 	&__li {
 		margin-left: 40px;
 		margin-bottom: 10px;
-		padding-left: 25px;
-		background: url(../img/li.png) 0 3px/20px no-repeat;
+		padding-left: 30px;
+		position: relative;
 		text-align: left;
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: -3px;
+			background: url(../img/li.png) center/contain no-repeat;
+			width: 25px;
+			height: 25px;
+		}
 		&:last-of-type {
 			margin-bottom: 0;
 		}
@@ -208,11 +217,19 @@ a {
 		margin-bottom: 30px;
 		font-size: 25px;
 		border-bottom: 3px solid #33CCFF;
+		transition: opacity 1s ease 0s;
+		&.show-title {
+			opacity: 1;
+		}
 	}
 	&__ul {
 		position: relative;
 		top: 100px;
 		opacity: 0;
+		transition: opacity 1s ease 0s;
+		&.show-contacts {
+			opacity: 1;
+		}
 	}
 	&__li {
 		margin: 0 0 30px 0;
@@ -241,17 +258,16 @@ a {
 }
 
 .burger {
-	display: none;
 	&__body {
 		opacity: 0;
 		cursor: pointer;
-		display: block;
 		position: fixed;
-		z-index: 4;
+		z-index: 5;
 		width: 40px;
 		height: 30px;
-		right: 2%;
-		top: 2%;
+		right: 20px;
+		top: 20px;
+		transition: opacity 1s ease 0s;
 		& span {
 			background-color: #0066CC;
 			position: absolute;
@@ -260,7 +276,7 @@ a {
 			height: 5px;
 			top: 12.5px;
 			border-radius: 2px;
-			transition: all 0.5 ease 0s;
+			transition: all 0.8s ease 0s;
 		}
 		&:before,
 		&:after {
@@ -278,6 +294,9 @@ a {
 		}
 		&:after {
 			bottom: 0;
+		}
+		&.show-burger {
+			opacity: 1;
 		}
 		&.active-burger {
 			& span {
