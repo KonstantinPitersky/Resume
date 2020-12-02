@@ -149,9 +149,18 @@ a {
 .main-block__li {
   margin-left: 40px;
   margin-bottom: 10px;
-  padding-left: 25px;
-  background: url(../img/li.png) 0 3px/20px no-repeat;
+  padding-left: 30px;
+  position: relative;
   text-align: left;
+}
+.main-block__li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  background: url(../img/li.png) center/contain no-repeat;
+  width: 25px;
+  height: 25px;
 }
 .main-block__li:last-of-type {
   margin-bottom: 0;
@@ -334,15 +343,14 @@ a {
 }
 
 .burger__body {
-  opacity: 0;
   cursor: pointer;
   display: block;
   position: fixed;
   z-index: 5;
   width: 40px;
   height: 30px;
-  left: 20px;
-  bottom: 20px;
+  right: 20px;
+  top: 20px;
 }
 .burger__body span {
   background-color: #0066CC;
@@ -597,6 +605,10 @@ a {
   p.points {
     margin-left: 0;
   }
+
+  .title {
+    line-height: 35px;
+  }
 }
 @media all and (max-width: 478px) {
   .text {
@@ -644,6 +656,14 @@ a {
   .main-block__title span {
     margin-right: 5px;
     padding: 8px 3px 3px 3px;
+  }
+  .main-block__li {
+    padding-left: 25px;
+  }
+  .main-block__li:before {
+    width: 20px;
+    height: 20px;
+    top: -4px;
   }
 
   .label__photo {
