@@ -333,9 +333,6 @@ a {
   margin: 0 auto;
 }
 
-.burger {
-  display: none;
-}
 .burger__body {
   opacity: 0;
   cursor: pointer;
