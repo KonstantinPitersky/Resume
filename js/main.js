@@ -6,7 +6,7 @@ class Main {
 		document.querySelector('.main__row').classList.add('scroll-up');
 		new Promise((resolve) => {
 			setTimeout(()=> {
-			document.querySelector('.burger__body').classList.add('show-item');
+			document.querySelector('.burger__body').classList.add('show-burger');
 			document.querySelector('.main__row').classList.add('resume-reading');
 			document.querySelector('.main__label').classList.add('show-bg');
 			resolve();
@@ -14,7 +14,7 @@ class Main {
 		}).then(() => {
 			setTimeout(() => {
 				document.querySelector('.label__photo').classList.add('scale-item');
-				document.querySelector('.contacts__title').classList.add('show-item');
+				document.querySelector('.contacts__title').classList.add('show-title');
 				}, 1000)
 		}).then(() => {
 			setTimeout(() => {

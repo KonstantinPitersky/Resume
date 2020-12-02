@@ -309,6 +309,12 @@ a {
   margin-bottom: 30px;
   font-size: 25px;
   border-bottom: 3px solid #33CCFF;
+  -webkit-transition: opacity 1s ease 0s;
+  -o-transition: opacity 1s ease 0s;
+  transition: opacity 1s ease 0s;
+}
+.contacts__title.show-title {
+  opacity: 100%;
 }
 .contacts__ul {
   position: relative;
@@ -352,6 +358,9 @@ a {
   height: 30px;
   right: 20px;
   top: 20px;
+  -webkit-transition: opacity 1s ease 0s;
+  -o-transition: opacity 1s ease 0s;
+  transition: opacity 1s ease 0s;
 }
 .burger__body span {
   background-color: #0066CC;
@@ -382,6 +391,9 @@ a {
 }
 .burger__body:after {
   bottom: 0;
+}
+.burger__body.show-burger {
+  opacity: 100%;
 }
 .burger__body.active-burger span {
   background-color: white;

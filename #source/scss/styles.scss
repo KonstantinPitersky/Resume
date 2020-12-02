@@ -217,6 +217,10 @@ a {
 		margin-bottom: 30px;
 		font-size: 25px;
 		border-bottom: 3px solid #33CCFF;
+		transition: opacity 1s ease 0s;
+		&.show-title {
+			opacity: 100%;
+		}
 	}
 	&__ul {
 		position: relative;
@@ -260,6 +264,7 @@ a {
 		height: 30px;
 		right: 20px;
 		top: 20px;
+		transition: opacity 1s ease 0s;
 		& span {
 			background-color: #0066CC;
 			position: absolute;
@@ -286,6 +291,9 @@ a {
 		}
 		&:after {
 			bottom: 0;
+		}
+		&.show-burger {
+			opacity: 100%;
 		}
 		&.active-burger {
 			& span {
