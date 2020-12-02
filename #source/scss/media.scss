@@ -1,0 +1,212 @@
+
+
+@media all and (max-width: 1150px) and (min-width: 960px) {
+	.main {
+		&__page {
+			padding-right: 20px; 
+			width: 70%;
+		}
+		&__introduction {
+			font-size: 30px;
+		}
+		&__education {
+			& p {
+				margin-left: 30px;
+				margin-bottom: 0;
+			}
+		}
+		&__label {
+			width: 30%;
+		}
+	}
+	.main-block {
+		&__li {
+			margin-left: 30px;
+		}
+	}
+}
+
+@media all and (max-width: 958px) {
+	.burger {
+		&__body {
+			opacity: 0;
+			cursor: pointer;
+			display: block;
+			position: fixed;
+			z-index: 4;
+			width: 40px;
+			height: 30px;
+			right: 2%;
+			top: 2%;
+			& span {
+				background-color: #0066CC;
+				position: absolute;
+				width: 100%;
+				left: 0;
+				height: 5px;
+				top: 12.5px;
+				border-radius: 2px;
+				transition: all 0.5 ease 0s;
+			}
+			&:before,
+			&:after {
+				content: "";
+				background-color: #0066CC;
+				position: absolute;
+				width: 100%;
+				height: 5px;
+				left: 0;
+				border-radius: 2px;
+				transition: all 0.8s ease 0s;
+			}
+			&:before {
+				top: 0;
+			}
+			&:after {
+				bottom: 0;
+			}
+			&.active-burger {
+				& span {
+					background-color: white;
+					transform: scale(0);
+				}
+				&:before {
+					background-color: white;
+					transform: rotate(45deg);
+					top: 12.5px;
+				}
+				&:after {
+					background-color: white;
+					transform: rotate(-45deg);
+					top: 12.5px;
+				}
+				
+			}
+		}
+	}
+	.main {
+		&__page {
+			width: 100%;
+		}
+		&__label {
+			position: fixed;
+			left: 100%;
+			width: 100%;
+			height: 100%;
+			z-index: 3;
+			transition: left 0.8s ease 0s;
+			&.active-menu {
+				left: 0;
+			}
+		}
+		&__bg {
+			background: url(../img/bg-small.jpg) 43% 57%/cover no-repeat;
+		}
+	}
+	.label {
+		&__contacts {
+			align-self: center;
+		}
+	}
+	.contacts {
+		&__li {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media all and (max-width: 798px) {
+	.main {
+		&__page {
+			padding: 0 30px 0 30px;
+		}
+		&__introduction {
+			font-size: 28px;
+		}
+	}
+}
+
+@media all and (max-width: 638px) {
+	.main {
+		&__hi {
+			padding: 30px 10px 10px 10px;
+			font-size: 20px;
+		}
+		&__introduction {
+			font-size: 25px;
+		}
+	}
+	.main-block {
+		&__li {
+			margin-left: 0;
+		}
+	}
+	p.points {
+		margin-left: 0;
+	}
+}
+
+@media all and (max-width: 478px) {
+	.text {
+		font-size: 15px;
+		& p {
+			line-height: 20px;
+		}
+	}
+	.title {
+		font-size: 17px;
+		line-height: 28px;
+	}
+	.mark {
+		font-size: 17px;
+	}
+	.main {
+		&__page {
+			padding: 0 20px 0 20px;
+		}
+		&__hi {
+			padding: 20px 5px 5px 5px;
+			font-size: 20px;
+		}
+		&__introduction {
+			margin-bottom: 70px;
+			font-size: 16px;
+			font-weight: 700;
+			&:after {
+				left: -55px;
+				top: 15px;
+			}
+		}
+		&__bg {
+			background: url(../img/bg-small.jpg) 43% 57%/cover no-repeat;
+		}
+	}
+	.main-block {
+		margin-bottom: 50px;
+		&__title {
+			margin-bottom: 10px;
+			& span {
+				margin-right: 5px;
+				padding: 8px 3px 3px 3px;
+			}
+		}
+	}
+	.label {
+		&__photo {
+			width: 200px;
+			height: 200px;
+		}
+		&__contacts {
+			top: 250px;
+		}
+	}
+	.contacts {
+		&__li {
+			margin-bottom: 10px;
+		}
+		&__title {
+			margin-bottom: 0;
+		}
+	}
+
+}

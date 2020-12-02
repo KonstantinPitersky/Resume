@@ -1,24 +1,24 @@
 .scroll-up {
-	animation: scroll 1s forwards;
+	animation: scroll-up 1s forwards;
 }
 
 .show-item {
-	animation: show 1s forwards;
+	animation: show-item 1s forwards;
 }
 
 .scale-item {
-	animation: scale 1s forwards;
+	animation: scale-item 1s forwards;
 }
 
 .show-bg {
-	animation: bg-color 1s forwards;
+	animation: show-bg 1s forwards;
 }
 
 .show-contacts {
-	animation: show 1s forwards, item-up 1s forwards;
+	animation: show-item 1s forwards, item-up 1s forwards;
 }
 
-@keyframes scroll {
+@keyframes scroll-up {
 	0% {
 		top: 100%;
 	}
@@ -27,7 +27,7 @@
 	}
 }
 
-@keyframes show {
+@keyframes show-item {
 	0% {
 		opacity: 0;
 	}
@@ -36,7 +36,7 @@
 	}
 }
 
-@keyframes scale {
+@keyframes scale-item {
 	0% {
 		transform: scale(0);
 	}
@@ -45,7 +45,7 @@
 	}
 }
 
-@keyframes bg-color {
+@keyframes show-bg {
 	0% {
 		background-color: tranparent;
 	}
